@@ -2,7 +2,6 @@
 #planeta {
     display: flex;
     height: 100vh; /* A altura ocupará toda a tela */
-    background-color: #011C40;
 }
 
 /* Primeira seção (ideia) com título e texto */
@@ -68,4 +67,11 @@
 /* Ajusta o estilo quando o mouse passar sobre os botões */
 #botoes button:hover {
     background-color: #17274e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #011C40;
+    overflow-x: hidden;
 }
