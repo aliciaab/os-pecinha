@@ -1,0 +1,85 @@
+header{
+    /* primeiro os tamanhos */
+    width: 100vw;
+    height: 15vh;
+   
+    /* depois organizar os itens dentro  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a2c54;
+   
+}
+
+ 
+#img_logo {
+    width: 6vw;
+    height: 6vw;
+    margin: 0 2vw;
+    overflow: hidden;
+    border-radius: 50%;
+ }
+ 
+  
+  header div{
+     width: 45vw;
+     height: 15vw;
+    
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-evenly;
+  }
+
+  #logo_pgn{
+    width: 45vw;
+    justify-content: start;
+  }
+  
+ .btn{
+    width: 12vw;
+    height: 5.5vh;
+  
+    border: nome;
+    border-radius: 50vw;
+    background-color:rgb(255, 255, 255) ;
+  
+    color: #ffffff;
+    font-size: 1.2vw;
+   }
+
+   #btns_paginas{
+    width: 45vw;
+    justify-content: space-evenly;
+ }
+ button.btn {
+    background-color: transparent;
+    border: none;
+    padding: 1vh 1vh;
+    color: rgb(0, 0, 0);
+    font-size: 2vh;
+    cursor: pointer;
+    
+    /* Adicionando estilos para centralizar o texto */
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Alinhamento horizontal */
+    text-align: center;
+}
+
+#btn_home{
+    background-color: #054570;
+}
+
+#btn_curso{
+    background-color: #054570;
+}
+
+#btn_tradutor{
+    background-color: #054570;
+}
+
+#logo_pgn h3{
+    font-size: 2vw;
+ }
