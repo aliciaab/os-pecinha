@@ -1,0 +1,121 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f4; 
+    text-align: center; 
+    position: relative; /* Para que o posicionamento absoluto funcione */ 
+}
+
+/* Estilo para os botões */
+button { 
+    background-color: #003366; 
+    color: white; 
+    border: none; 
+    padding: 15px 30px; 
+    margin: 10px; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover { 
+    background-color: #005bb5; 
+}
+
+/* Estilo para a seção de descrição */
+section { 
+    margin-top: 50px; 
+    padding: 20px; 
+    text-align: left; /* Alinhando o texto à esquerda */ 
+    display: flex;
+    flex-direction: row; /* Muda a direção para linha (lado a lado) */
+    justify-content: space-between; /* Espaça os itens */
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Estilo para a parte de texto e logo */
+.text-content { 
+    display: flex;
+    flex-direction: column; /* Texto em coluna */
+    align-items: flex-start; /* Alinhamento à esquerda */
+    width: 60%; /* Ajustando a largura do texto */
+    margin-left: 20px; /* Deixa o texto mais para a esquerda */
+}
+
+.text-content h2 { 
+    font-size: 2rem; 
+    color: #003366; 
+    margin-bottom: 20px; 
+}
+
+.text-content p { 
+    font-size: 1.2rem; 
+    color: #333; 
+    width: 60%; 
+    margin-bottom: 20px; 
+    text-align: left; /* Alinhando o texto à esquerda */
+}
+
+/* Posicionando os botões no lado direito da tela */
+.buttons { 
+    display: flex;
+    flex-direction: column;
+    width: 30%; /* Ajustando a largura do container de botões */
+    align-items: flex-end; /* Alinhando os botões à direita */
+}
+
+.buttons button { 
+    width: 200px; /* Largura fixa para os botões */
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.5vw; /* Tamanho do texto nos botões */
+    background-color: #17274e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #005bb5;
+}
+
+/* Logo centralizado */
+.logo { 
+    max-width: 150px; 
+    margin-bottom: 20px; 
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+    section { 
+        flex-direction: column; /* No mobile, muda para coluna */
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .text-content p { 
+        width: 100%; 
+    }
+
+    .buttons { 
+        width: 100%; 
+        align-items: center; /* No mobile, os botões voltam ao centro */
+        right: 0; 
+    }
+
+    button { 
+        width: 80%; 
+        margin: 10px auto; 
+    }
+
+    section .text-content { 
+        width: 100%; /* Texto ocupa 100% no mobile */
+        text-align: center; /* Centralizando o texto no mobile */
+    }
+}
