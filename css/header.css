@@ -1,85 +1,119 @@
-header{
-    /* primeiro os tamanhos */
-    width: 100vw;
-    height: 15vh;
-   
-    /* depois organizar os itens dentro  */
+/* Define que a tela será dividida em duas colunas */
+#planeta {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #0a2c54;
-   
+    height: 100vh; /* A altura ocupará toda a tela */
 }
 
- 
-#img_logo {
-    width: 6vw;
-    height: 6vw;
-    margin: 0 2vw;
-    overflow: hidden;
-    border-radius: 50%;
- }
- 
-  
-  header div{
-     width: 45vw;
-     height: 15vw;
-    
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-evenly;
-  }
-
-  #logo_pgn{
-    width: 45vw;
-    justify-content: start;
-  }
-  
- .btn{
-    width: 12vw;
-    height: 5.5vh;
-  
-    border: nome;
-    border-radius: 50vw;
-    background-color:rgb(255, 255, 255) ;
-  
-    color: #ffffff;
-    font-size: 1.2vw;
-   }
-
-   #btns_paginas{
-    width: 45vw;
-    justify-content: space-evenly;
- }
- button.btn {
-    background-color: transparent;
-    border: none;
-    padding: 1vh 1vh;
-    color: rgb(0, 0, 0);
-    font-size: 2vh;
-    cursor: pointer;
-    
-    /* Adicionando estilos para centralizar o texto */
+/* Primeira seção (ideia) com título e texto */
+#ideia {
+    flex: 1; /* Ocupa metade da tela */
     display: flex;
-    align-items: center; /* Alinhamento vertical */
-    justify-content: center; /* Alinhamento horizontal */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Estilo para o título */
+#titulo1 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+    color: #17274e;
+}
+
+/* Parágrafo centralizado abaixo do título */
+#ideia p {
+    font-size: 1.5vw;
+    color: #333;
     text-align: center;
 }
 
-#btn_home{
-    background-color: #054570;
+/* Segunda seção (botoes) com botões empilhados */
+#botoes {
+    flex: 1; /* Ocupa a outra metade da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
 }
 
-#btn_curso{
-    background-color: #054570;
+/* Estilo geral para os botões */
+#botoes button {
+    width: 20vw;
+    height: 8vh;
+    margin: 10px 0;
+    font-size: 1.5vw;
+    background: linear-gradient(145deg, rgba(23, 39, 78, 0.7), rgba(58, 78, 127, 0.7)); /* Gradiente semi-transparente */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    backdrop-filter: blur(10px); /* Efeito glassmorphism */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais profunda */
+    position: relative; /* Para o efeito de brilho */
+    overflow: hidden;
 }
 
-#btn_tradutor{
-    background-color: #054570;
+/* Efeito de brilho nos botões */
+#botoes button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    transition: transform 0.5s;
+    transform: rotate(45deg) translateX(0);
+    pointer-events: none;
 }
 
-#logo_pgn h3{
-    font-size: 2vw;
- }
+#botoes button:hover::before {
+    transform: rotate(45deg) translateX(200%);
+}
+
+/* Estilo para imagens nos botões */
+#botoes button img {
+    width: 2vw;
+    height: 2vw;
+}
+
+/* Ajusta o estilo quando o mouse passar sobre os botões */
+#botoes button:hover {
+    background: linear-gradient(145deg, rgba(15, 26, 60, 0.8), rgba(39, 58, 111, 0.8)); /* Gradiente mais escuro e vívido */
+    transform: scale(1.1); /* Aumenta mais o botão no hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Sombra mais intensa no hover */
+}
+
+/* Adiciona estilo ao foco para acessibilidade */
+#botoes button:focus {
+    outline: 2px solid #0f1a3c;
+    outline-offset: 4px;
+    transform: scale(1.05); /* Aumenta ligeiramente ao focar */
+}
+
+/* Estilos adicionais para telas menores */
+@media (max-width: 768px) {
+    #titulo1 {
+        font-size: 5vw;
+    }
+    #ideia p {
+        font-size: 3vw;
+    }
+    #botoes button {
+        width: 60vw;
+        height: 10vh;
+        font-size: 4vw;
+    }
+    #botoes button img {
+        width: 5vw;
+        height: 5vw;
+    }
+}
