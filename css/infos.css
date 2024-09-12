@@ -20,15 +20,19 @@
     font-size: 3vw;
     margin-bottom: 20px;
     color: #17274e;
+    background-color: #f0f0f0; /* Cor de fundo do título */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas do título */
 }
 
 /* Parágrafo centralizado abaixo do título */
-#ideia p {
+#ideia h6 {
     font-size: 1.5vw;
     color: #333;
     text-align: center;
-    background-color: #054570;
-    border-radius: 20px; 
+    background-color: #054570; /* Cor de fundo do parágrafo */
+    border-radius: 20px; /* Bordas arredondadas do parágrafo */
+    padding: 15px; /* Espaçamento interno */
 }
 
 
@@ -69,9 +73,3 @@
     background-color: #17274e;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #011C40;
-    overflow-x: hidden;
-}
