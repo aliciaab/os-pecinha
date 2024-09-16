@@ -2,98 +2,141 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #011C40; /* Cor de fundo escura para efeito tecnológico */
-    overflow-x: hidden; /* Garante que não haja rolagem horizontal */
-    font-family: 'Roboto', sans-serif; /* Fonte moderna e limpa */
+    background-color: #011C40;
+    /* Cor de fundo escura para efeito tecnológico */
+    overflow-x: hidden;
+    /* Garante que não haja rolagem horizontal */
+    font-family: 'Roboto', sans-serif;
+    /* Fonte moderna e limpa */
 }
 
 /* Define que a tela será dividida em duas colunas */
 #planeta {
     display: flex;
-    height: 100vh; /* A altura ocupará toda a tela */
-    overflow: hidden; /* Garante que não haja barras de rolagem indesejadas */
+    height: 100vh;
+    /* A altura ocupará toda a tela */
+    overflow: hidden;
+    /* Garante que não haja barras de rolagem indesejadas */
 }
 
 /* Primeira seção (ideia) com título e texto */
 #ideia {
-    flex: 1; /* Ocupa metade da tela */
+    flex: 1;
+    /* Ocupa metade da tela */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #002A42, #003C56); /* Gradiente de azul escuro */
-    border-right: 2px solid #004d6a; /* Linha de divisão sutil */
-    border-radius: 10px; /* Bordas arredondadas */
+    padding: 30px;
+    background: linear-gradient(135deg, #002A42, #003C56);
+    /* Gradiente de azul escuro */
+    border-right: 2px solid #004d6a;
+    /* Linha de divisão sutil */
+    border-radius: 10px;
+    /* Bordas arredondadas */
 }
 
 /* Estilo para o título */
 #titulo1 {
-    font-size: 2.5rem; /* Tamanho de fonte ajustado */
+    font-size: 2.5rem;
+    /* Tamanho de fonte ajustado */
     margin-bottom: 15px;
-    color: #00BFFF; /* Azul neon para destaque */
-    background: rgba(255, 255, 255, 0.1); /* Fundo branco semitransparente */
-    padding: 15px 25px; /* Espaçamento interno ajustado */
-    border-radius: 15px; /* Bordas mais arredondadas */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Sombra sutil para profundidade */
-    text-align: center; /* Centraliza o texto */
-    max-width: 90%; /* Limita a largura máxima para manter o layout organizado */
+    color: #00BFFF;
+    /* Azul neon para destaque */
+    background: rgba(255, 255, 255, 0.1);
+    /* Fundo branco semitransparente */
+    padding: 15px 25px;
+    /* Espaçamento interno ajustado */
+    border-radius: 15px;
+    /* Bordas mais arredondadas */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    /* Sombra sutil para profundidade */
+    text-align: center;
+    /* Centraliza o texto */
+    max-width: 90%;
+    /* Limita a largura máxima para manter o layout organizado */
 }
 
 /* Estilo para o parágrafo dentro de #ideia */
 #ideia h6 {
-    font-size: 1.2rem; /* Tamanho de fonte ajustado */
-    color: #E0E0E0; /* Texto claro para contraste com o fundo escuro */
+    font-size: 1.2rem;
+    /* Tamanho de fonte ajustado */
+    color: #E0E0E0;
+    /* Texto claro para contraste com o fundo escuro */
     text-align: center;
-    background: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
-    border-radius: 10px; /* Bordas arredondadas */
-    padding: 15px; /* Espaçamento interno ajustado */
-    max-width: 90%; /* Limita a largura máxima para manter o layout organizado */
-    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
-    line-height: 1.4; /* Melhora a legibilidade do texto */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    background: rgba(0, 0, 0, 0.8);
+    /* Fundo escuro semitransparente */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 15px;
+    /* Espaçamento interno ajustado */
+    max-width: 90%;
+    /* Limita a largura máxima para manter o layout organizado */
+    margin: 0 auto;
+    /* Centraliza o parágrafo horizontalmente */
+    line-height: 1.4;
+    /* Melhora a legibilidade do texto */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra para profundidade */
 }
 
 /* Segunda seção (botoes) com botões empilhados */
 #botoes {
-    flex: 1; /* Ocupa a outra metade da tela */
+    flex: 1;
+    /* Ocupa a outra metade da tela */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #002A42, #003C56); /* Gradiente de azul escuro */
+    background: linear-gradient(135deg, #002A42, #003C56);
+    /* Gradiente de azul escuro */
     padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 10px;
+    /* Bordas arredondadas */
 }
 
 /* Estilo geral para os botões */
 #botoes button {
-    width: 15vw; /* Largura reduzida */
-    height: 6vh; /* Altura reduzida */
-    margin: 10px 0; /* Margem ajustada */
-    font-size: 1.2rem; /* Tamanho de fonte ajustado */
-    background: linear-gradient(135deg, #003366, #004080); /* Gradiente de azul escuro nos botões */
+    width: 15vw;
+    /* Largura reduzida */
+    height: 6vh;
+    /* Altura reduzida */
+    margin: 10px 0;
+    /* Margem ajustada */
+    font-size: 1.2rem;
+    /* Tamanho de fonte ajustado */
+    background: linear-gradient(135deg, #003366, #004080);
+    /* Gradiente de azul escuro nos botões */
     color: white;
-    border: 2px solid #004080; /* Borda azul escuro */
-    border-radius: 8px; /* Bordas arredondadas dos botões */
+    border: 2px solid #004080;
+    /* Borda azul escuro */
+    border-radius: 8px;
+    /* Bordas arredondadas dos botões */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; /* Ajuste do espaço entre o texto e o ícone */
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
-    font-family: 'Roboto', sans-serif; /* Fonte moderna e limpa */
+    gap: 8px;
+    /* Ajuste do espaço entre o texto e o ícone */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transição suave */
+    font-family: 'Roboto', sans-serif;
+    /* Fonte moderna e limpa */
 }
 
 /* Estilo para ícones dentro dos botões (se houver) */
 #botoes button img {
-    width: 1.5rem; /* Tamanho do ícone ajustado */
+    width: 1.5rem;
+    /* Tamanho do ícone ajustado */
     height: 1.5rem;
 }
 
 /* Ajusta o estilo quando o mouse passar sobre os botões */
 #botoes button:hover {
-    background: linear-gradient(135deg, #004080, #003366); /* Inverte o gradiente no hover */
-    transform: scale(1.03); /* Aumenta o tamanho do botão no hover */
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4); /* Sombra mais forte no hover */
+    background: linear-gradient(135deg, #004080, #003366);
+    /* Inverte o gradiente no hover */
+    transform: scale(1.03);
+    /* Aumenta o tamanho do botão no hover */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+    /* Sombra mais forte no hover */
 }
