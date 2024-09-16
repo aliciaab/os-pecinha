@@ -28,26 +28,22 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background: linear-gradient(135deg, #002A42, #003C56);
+    background: linear-gradient(135deg, #002A42, #002A42);
     /* Gradiente de azul escuro */
-    border-right: 2px solid #004d6a;
-    /* Linha de divisão sutil */
-    border-radius: 10px;
-    /* Bordas arredondadas */
 }
 
 /* Estilo para o título */
 #titulo1 {
     font-size: 2.5rem;
     /* Tamanho de fonte ajustado */
-    margin-bottom: 15px;
+    margin-bottom: 290px;
     color: #ffffff;
     /* Azul neon para destaque */
     background: rgba(255, 255, 255, 0.1);
     /* Fundo branco semitransparente */
     padding: 15px 25px;
     /* Espaçamento interno ajustado */
-    border-radius: 15px;
+    border-radius: 105px;
     /* Bordas mais arredondadas */
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     /* Sombra sutil para profundidade */
@@ -64,7 +60,6 @@ body {
     color: #E0E0E0;
     /* Texto claro para contraste com o fundo escuro */
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
     /* Fundo escuro semitransparente */
     border-radius: 10px;
     /* Bordas arredondadas */
@@ -75,9 +70,7 @@ body {
     margin: 0 auto;
     /* Centraliza o parágrafo horizontalmente */
     line-height: 1.4;
-    /* Melhora a legibilidade do texto */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    /* Sombra para profundidade */
+    position: absolute;
 }
 
 /* Segunda seção (botoes) com botões empilhados */
@@ -88,10 +81,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #002A42, #003C56);
+    background: linear-gradient(135deg, #002A42, #002A42);
     /* Gradiente de azul escuro */
     padding: 20px;
-    border-radius: 10px;
     /* Bordas arredondadas */
 }
 
@@ -101,22 +93,22 @@ body {
     /* Largura reduzida */
     height: 6vh;
     /* Altura reduzida */
-    margin: 10px 0;
+    margin: 10px;
     /* Margem ajustada */
     font-size: 1.2rem;
     /* Tamanho de fonte ajustado */
-    background: linear-gradient(135deg, #003366, #004080);
+    background: linear-gradient(135deg, #003366, #012e5c);
     /* Gradiente de azul escuro nos botões */
     color: white;
     border: 2px solid #004080;
     /* Borda azul escuro */
-    border-radius: 8px;
+    border-radius: 25vh;
     /* Bordas arredondadas dos botões */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10%;
     /* Ajuste do espaço entre o texto e o ícone */
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     /* Transição suave */
