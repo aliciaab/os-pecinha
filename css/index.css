@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(./infos.css);
+@import url(./footer.css);
 
 
 body {
@@ -7,4 +8,8 @@ body {
     padding: 0;
     background-color: #011C40;
     overflow-x: hidden;
+}
+h6 {
+    color:#D9D0C1;
+    margin-left: 45%;
 }
