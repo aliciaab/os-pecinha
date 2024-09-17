@@ -4,10 +4,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #011126;
+    background-color: #024059;
     padding: 0 2vw;
 }
-
 #img_logo {
     width: 120px;
     height: 120px;
@@ -25,44 +24,53 @@ header {
 #btns_paginas {
     display: flex;
     justify-content: flex-end;
-    gap: 1.5vw; 
+    gap: 1.5vw;
     margin-right: 5%;
 }
 
 .btn {
-    width: 10vw;  
-    height: 5vh; 
-    border-radius: 50vw;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 50px;
     background-color: rgb(255, 255, 255);
     color: #ffffff;
-    font-size: 1vw; 
+    font-size: 1.2vw;
     cursor: pointer;
-}
-
-button.btn {
-    background-color: #054570;
-    border: none;
-    padding: 0.8vh; 
-    color: white;
-    font-size: 1.2vw; 
-    cursor: pointer;
-
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
+button.btn {
+    background-color: #D9D0C1;
+    border: none;
+    padding: 0.8vh;
+    color: white;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button.btn:hover {
+    background-color: #D9D0C1; /* Cor mais escura no hover */
+    transform: scale(1.1); /* Efeito de aumento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o botão */
+}
 
 #btn_home {
-    background-color: #074973;
-    
+    background-color: #737268;
 }
 
 #btn_curso {
-    background-color: #074973;
+    background-color: #737268;
 }
 
 #btn_tradutor {
-    background-color: #074973;
+    background-color: #737268;
 }
