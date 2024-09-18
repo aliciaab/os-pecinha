@@ -10,6 +10,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F2EBDC;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     overflow-x: hidden;
 }
 
@@ -22,13 +24,16 @@ header {
     justify-content: space-between;
     background-color: #024059;
     padding: 0 2vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 #img_logo {
     width: 70px;
     height: 70px;
-    border-radius: 100%;
+    border-radius: 50%;
     overflow: hidden;
     display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #logo_pgn {
@@ -48,21 +53,7 @@ header {
     width: 10vw;
     height: 5vh;
     border-radius: 50px;
-    background-color: rgb(255, 255, 255);
-    color: #ffffff;
-    font-size: 1.2vw;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-button.btn {
     background-color: #D9D0C1;
-    border: none;
-    padding: 0.8vh;
     color: white;
     font-size: 1.2vw;
     cursor: pointer;
@@ -71,29 +62,26 @@ button.btn {
     align-items: center;
     justify-content: center;
     text-align: center;
+    border: none;
 }
 
 button.btn:hover {
-    background-color: #D9D0C1; /* Cor mais escura no hover */
+    background-color: #C0B9A5; /* Cor mais escura no hover */
     transform: scale(1.1); /* Efeito de aumento */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o botão */
 }
 
-#btn_home {
+#btn_home, #btn_curso, #btn_tradutor {
     background-color: #737268;
 }
 
-#btn_curso {
-    background-color: #737268;
+#btn_home:hover, #btn_curso:hover, #btn_tradutor:hover {
+    background-color: #5C5B53; /* Mais contraste no hover */
 }
-
-#btn_tradutor {
-    background-color: #737268;
-}
-
 
 header #titulo-principal {
     font-size: 2rem;
+    color: #fff;
 }
 
 /* Navegação */
@@ -117,7 +105,7 @@ header #titulo-principal {
 }
 
 #navegacao-principal ul li a:hover {
-    color: #000000;
+    color: #C0B9A5; /* Suavizando o efeito hover */
 }
 
 /* Container Principal */
@@ -132,16 +120,17 @@ section {
     margin-bottom: 2rem;
     padding: 1.5rem;
     border-radius: 8px;
-   
 }
 
 h2 {
-    color: #000000;
+    color: #024059;
     margin-bottom: 1rem;
 }
 
 p {
     margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.8;
 }
 
 /* Tradutor */
@@ -158,37 +147,41 @@ p {
 }
 
 #botaoIniciarTraducao {
-    background-color: #000000;
+    background-color: #024059;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 #botaoIniciarTraducao:hover {
-    background-color: #000000;
+    background-color: #012f44;
 }
 
+/* Cursos */
 #curso ul {
     list-style-type: square;
     margin-left: 2rem;
     margin-bottom: 1rem;
+    color: #333;
 }
 
 #botaoAssinarCurso {
-    background-color: #000000;
+    background-color: #024059;
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
 #botaoAssinarCurso:hover {
-    background-color: #000000;
+    background-color: #012f44;
 }
 
 #curso-info {
@@ -208,18 +201,32 @@ p {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .course-modules h3 {
-    color: #333;
+    color: #024059;
     margin-bottom: 0.75rem;
 }
 
-@media (max-width: 480px) {
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    #btns_paginas {
+        margin-right: 0;
+    }
+
     .course-modules {
         flex-direction: column;
     }
+}
 
+@media (max-width: 480px) {
     #navegacao-principal ul {
         flex-direction: column;
         align-items: center;

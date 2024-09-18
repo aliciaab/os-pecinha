@@ -4,7 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #024059;
+    background-color: #2EADC3;
     padding: 0 2vw;
 }
 #img_logo {
@@ -64,13 +64,13 @@ button.btn:hover {
 }
 
 #btn_home {
-    background-color: #737268;
+    background-color: #024059;
 }
 
 #btn_curso {
-    background-color: #737268;
+    background-color: #024059;
 }
 
 #btn_tradutor {
-    background-color: #737268;
+    background-color: #024059;
 }

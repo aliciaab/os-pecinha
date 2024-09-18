@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background: linear-gradient(135deg, #F2EBDC, #F2EBDC);
+    background: linear-gradient(135deg, #dcdcdc, #dcdcdc);
     /* Gradiente de azul escuro */
 }
 
@@ -26,7 +26,7 @@
     font-size: 2.5rem;
     /* Tamanho de fonte ajustado */
     margin-bottom: 290px;
-    color: #737268;
+    color: #024059;
     /* Azul neon para destaque */
     background: rgba(255, 255, 255, 0.1);
     /* Fundo branco semitransparente */
@@ -61,7 +61,7 @@
     line-height: 1.4;
     position: absolute;
     box-shadow: 0 5px 12px rgba(255, 255, 255, 0.4);
-    background-color:#024059;
+    background-color:#2EADC3;
 }
 
 /* Segunda seção (botoes) com botões empilhados */
@@ -72,7 +72,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #F2EBDC, #F2EBDC);
+    background: linear-gradient(135deg, #dcdcdc, #dcdcdc);
     /* Gradiente de azul escuro */
     padding: 20px;
     /* Bordas arredondadas */
@@ -88,10 +88,10 @@
     /* Margem ajustada */
     font-size: 1.2rem;
     /* Tamanho de fonte ajustado */
-    background: linear-gradient(135deg, #737268, #737268);
+    background: linear-gradient(135deg, #024059, #024059);
     /* Gradiente de azul escuro nos botões */
     color: white;
-    border: 2px solid #737268;
+    border: 2px solid #024059;
     /* Borda azul escuro */
     border-radius: 25vh;
     /* Bordas arredondadas dos botões */
@@ -116,7 +116,7 @@
 
 /* Ajusta o estilo quando o mouse passar sobre os botões */
 #botoes button:hover {
-    background: linear-gradient(135deg, #737268, #737268);
+    background: linear-gradient(135deg, #024059, #024059);
     /* Inverte o gradiente no hover */
     transform: scale(1.03);
     /* Aumenta o tamanho do botão no hover */
@@ -133,6 +133,6 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background: linear-gradient(135deg, #F2EBDC, #F2EBDC);
+    background: linear-gradient(135deg, #dcdcdc, #dcdcdc);
 }
 
