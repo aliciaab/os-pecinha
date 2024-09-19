@@ -64,5 +64,9 @@ button.btn:hover {
 }
 
 #btn_home, #btn_curso, #btn_tradutor {
-    background-color: #2D2D2C; /* Cor alterada */
+    background: linear-gradient(135deg, #507687  , #2b5264 ); /* Cor alterada */
+}
+
+#btn_home:hover, #btn_curso:hover, #btn_tradutor:hover {
+    background: linear-gradient(135deg, #024059, #024059);
 }

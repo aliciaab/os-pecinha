@@ -46,6 +46,29 @@
 #ideia h6 {
     font-size: 1.2rem;
     /* Tamanho de fonte ajustado */
+    color: #FCFAEE;
+    /* Texto claro para contraste com o fundo escuro */
+    text-align: center;
+    /* Fundo escuro semitransparente */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 15px;
+    /* Espaçamento interno ajustado */
+    max-width: 90%;
+    /* Limita a largura máxima para manter o layout organizado */
+    margin: 0 auto;
+    /* Centraliza o parágrafo horizontalmente */
+    line-height: 1.4;
+    display: flex; /* não mexer*/
+    justify-content: center; /* não mexer*/
+    align-items: flex-end; /* não mexer*/
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.4);
+    background-color:#507687;
+    margin-top: 15vh; /* não mexer*/
+}
+h6 {
+    font-size: 1.2rem;
+    /* Tamanho de fonte ajustado */
     color: #D9D0C1;
     /* Texto claro para contraste com o fundo escuro */
     text-align: center;
@@ -88,10 +111,10 @@
     /* Margem ajustada */
     font-size: 1.2rem;
     /* Tamanho de fonte ajustado */
-    background: linear-gradient(135deg, #024059, #024059);
+    background: linear-gradient(135deg, #507687  , #2b5264 );
     /* Gradiente de azul escuro nos botões */
-    color: white;
-    border: 2px solid #024059;
+    color: #FCFAEE ;
+    border: 0;
     /* Borda azul escuro */
     border-radius: 25vh;
     /* Bordas arredondadas dos botões */

@@ -9,12 +9,17 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F2EBDC;
+    background-color: #FCFAEE;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
 }
-
+#titulo-tradutor {
+    background-color: #507687;
+    color: #FCFAEE;
+    border: 0;
+    border-radius: 25vh;
+}
 /* Cabeçalho */
 header {
     width: 100vw;
@@ -22,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #024059;
+    background-color: #507687; /*tariq: alterei as cores*/
     padding: 0 2vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -53,7 +58,7 @@ header {
     width: 10vw;
     height: 5vh;
     border-radius: 50px;
-    background-color: #D9D0C1;
+    background-color: #507687; /*alterei as cores, de acordo com o figma*/
     color: white;
     font-size: 1.2vw;
     cursor: pointer;
@@ -147,7 +152,7 @@ p {
 }
 
 #botaoIniciarTraducao {
-    background-color: #024059;
+    background-color: #507687;/*alterei a cor também*/
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
