@@ -1,15 +1,16 @@
 header {
     width: 100vw;
-    height: 12vh;
+    height: 11vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2EADC3;
+    background-color: #FCFAEE;
     padding: 0 2vw;
+    border-bottom: 1px solid #507687; 
 }
 #img_logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     overflow: hidden;
     display: flex;
@@ -64,13 +65,13 @@ button.btn:hover {
 }
 
 #btn_home {
-    background-color: #024059;
+    background-color: #507687;
 }
 
 #btn_curso {
-    background-color: #024059;
+    background-color: #507687;
 }
 
 #btn_tradutor {
-    background-color: #024059;
+    background-color: #507687;
 }

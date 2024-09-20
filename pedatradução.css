@@ -8,7 +8,7 @@ footer {
     align-items: center;
     position: absolute; /* Garante que o footer fique fixado no fim da página */
     bottom: 0;
-    background-color: #2EADC3;
+    background-color: #2D2D2C;
     padding: 15px;
 }
 
@@ -22,5 +22,6 @@ footer {
 #txt-footer {
     font-size: 1vh;
     margin-left: 40%;
+    color: #FCFAEE;
     
 }

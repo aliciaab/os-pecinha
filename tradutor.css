@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #F2EBDC;
+    background-color: #FCFAEE;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
@@ -22,9 +22,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #024059;
+    background-color: #FCFAEE;
     padding: 0 2vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #507687;
 }
 
 #img_logo {
@@ -49,39 +50,49 @@ header {
     margin-right: 5%;
 }
 
-.btn {
-    width: 10vw;
-    height: 5vh;
-    border-radius: 50px;
-    background-color: #D9D0C1;
+#botaoIniciarTraducao {
+    background-color: #507687;
     color: white;
-    font-size: 1.2vw;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+    /* Tamanho ajustado para destaque */
 }
+
+
+#botaoIniciarTraducao:hover {
+    background-color: #507687;
+}
+
 
 button.btn:hover {
-    background-color: #C0B9A5; /* Cor mais escura no hover */
-    transform: scale(1.1); /* Efeito de aumento */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar o botão */
+    background-color: #507687;
+    /* Cor mais escura no hover */
+    transform: scale(1.1);
+    /* Efeito de aumento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destacar o botão */
 }
 
-#btn_home, #btn_curso, #btn_tradutor {
+#btn_home,
+#btn_curso,
+#btn_tradutor {
     background-color: #737268;
 }
 
-#btn_home:hover, #btn_curso:hover, #btn_tradutor:hover {
-    background-color: #5C5B53; /* Mais contraste no hover */
+#btn_home:hover,
+#btn_curso:hover,
+#btn_tradutor:hover {
+    background-color: #5C5B53;
+    /* Mais contraste no hover */
 }
 
 header #titulo-principal {
     font-size: 2rem;
-    color: #fff;
+    color: #507687;
 }
 
 /* Navegação */
@@ -98,14 +109,15 @@ header #titulo-principal {
 }
 
 #navegacao-principal ul li a {
-    color: white;
+    color: #507687;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 #navegacao-principal ul li a:hover {
-    color: #C0B9A5; /* Suavizando o efeito hover */
+    color: #507687;
+    /* Suavizando o efeito hover */
 }
 
 /* Container Principal */
@@ -123,7 +135,7 @@ section {
 }
 
 h2 {
-    color: #024059;
+    color: #507687;
     margin-bottom: 1rem;
 }
 
@@ -147,8 +159,8 @@ p {
 }
 
 #botaoIniciarTraducao {
-    background-color: #024059;
-    color: white;
+    background-color: #507687;
+    color: #FCFAEE;
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
@@ -158,7 +170,7 @@ p {
 }
 
 #botaoIniciarTraducao:hover {
-    background-color: #012f44;
+    background-color: #507687;
 }
 
 /* Cursos */
@@ -170,8 +182,8 @@ p {
 }
 
 #botaoAssinarCurso {
-    background-color: #024059;
-    color: white;
+    background-color: #507687;
+    color: #FCFAEE;
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
@@ -181,7 +193,7 @@ p {
 }
 
 #botaoAssinarCurso:hover {
-    background-color: #012f44;
+    background-color: #507687;
 }
 
 #curso-info {
@@ -198,17 +210,50 @@ p {
 .course-modules .modulo {
     flex: 1;
     padding: 1rem;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #FCFAEE;
+    border: 1px solid #FCFAEE;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .course-modules h3 {
-    color: #024059;
+    color: #507687;
     margin-bottom: 0.75rem;
 }
 
+/* Tradutor */
+.secao-tradutor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-tradutor video {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+#botaoIniciarTraducao {
+    margin-top: auto;
+    /* Para garantir que o botão fique no final da seção */
+    background-color: #507687;
+    color: #FCFAEE;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+#botaoIniciarTraducao:hover {
+    background-color: #507687;
+}
 /* Responsividade */
 @media (max-width: 768px) {
     header {

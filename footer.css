@@ -6,6 +6,7 @@ footer {
     align-items: center;
     position: absolute; /* Garante que o footer fique fixado no fim da página */
     bottom: 0;
+    
 }
 
 .content-footer {
