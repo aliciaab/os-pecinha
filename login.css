@@ -1,11 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
     background-color: #FCFAEE;
-=======
     margin: 0;
     height: 100vh;
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +32,6 @@ body::before {
     height: 100vh;
 }
 
-<<<<<<< HEAD
 .login-container {
     background-color: #507687;
     padding: 40px;
@@ -44,7 +40,7 @@ body::before {
     width: 300px;
     text-align: center;
     color: white;
-=======
+}
 .login-box {
     display: flex;
     width: 70vw;
@@ -55,7 +51,6 @@ body::before {
     overflow: hidden;
     position: relative; /* Garante que esteja acima do fundo com blur */
     z-index: 1; /* Coloca a caixa de login acima do fundo */
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
 }
 
 
@@ -95,16 +90,13 @@ body::before {
 }
 
 .google-btn {
-<<<<<<< HEAD
     background-color: #1877F2;
-=======
-    background-color: #2D2D2C;
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
+    background-color: #1877F2;
     color: white;
 }
 
 .facebook-btn {
-    background-color: #2D2D2C;
+    background-color: #1877F2;
     color: white;
 }
 

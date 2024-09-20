@@ -6,11 +6,8 @@ footer {
     align-items: center;
     position: absolute; /* Garante que o footer fique fixado no fim da página */
     bottom: 0;
-<<<<<<< HEAD
-    
-=======
+
     background-color: #2D2D2C ;
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
 }
 
 .content-footer {

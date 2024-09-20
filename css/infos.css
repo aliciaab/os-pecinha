@@ -17,11 +17,8 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-<<<<<<< HEAD
     background: linear-gradient(135deg, #FCFAEE, #FCFAEE);
-=======
     background-color: #FCFAEE;
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     /* Gradiente de azul escuro */
 }
 
@@ -51,8 +48,6 @@
     font-size: 1.2rem;
     /* Tamanho de fonte ajustado */
     color: #FCFAEE;
-<<<<<<< HEAD
-=======
     /* Texto claro para contraste com o fundo escuro */
     text-align: center;
     /* Fundo escuro semitransparente */
@@ -76,7 +71,6 @@ h6 {
     font-size: 1.2rem;
     /* Tamanho de fonte ajustado */
     color: #D9D0C1;
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     /* Texto claro para contraste com o fundo escuro */
     text-align: center;
     /* Fundo escuro semitransparente */
@@ -118,17 +112,14 @@ h6 {
     /* Margem ajustada */
     font-size: 1.2rem;
     /* Tamanho de fonte ajustado */
-<<<<<<< HEAD
     background: linear-gradient(135deg, #507687, #507687);
     /* Gradiente de azul escuro nos botões */
     color: white;
     border: 2px solid #507687;
-=======
     background: linear-gradient(135deg, #507687  , #2b5264 );
     /* Gradiente de azul escuro nos botões */
     color: #FCFAEE ;
     border: 0;
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     /* Borda azul escuro */
     border-radius: 25vh;
     /* Bordas arredondadas dos botões */
@@ -172,4 +163,3 @@ h6 {
     padding: 30px;
     background: linear-gradient(135deg, #FCFAEE, #FCFAEE);
 }
-

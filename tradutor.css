@@ -27,11 +27,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
     background-color: #FCFAEE;
-=======
-    background-color: #507687; /*tariq: alterei as cores*/
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
+    background-color: #FCFAEE; /*tariq: alterei as cores*/
     padding: 0 2vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #507687;
@@ -59,16 +56,14 @@ header {
     margin-right: 5%;
 }
 
-<<<<<<< HEAD
 #botaoIniciarTraducao {
     background-color: #507687;
-=======
+}
 .btn {
     width: 10vw;
     height: 5vh;
     border-radius: 50px;
     background-color: #507687; /*alterei as cores, de acordo com o figma*/
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -176,13 +171,10 @@ p {
 }
 
 #botaoIniciarTraducao {
-<<<<<<< HEAD
     background-color: #507687;
     color: #FCFAEE;
-=======
     background-color: #507687;/*alterei a cor também*/
     color: white;
->>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
