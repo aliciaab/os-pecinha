@@ -1,12 +1,41 @@
 body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background-color: #FCFAEE;
+=======
+    margin: 0;
+    height: 100vh;
+>>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Evita rolagem indesejada */
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIG4.598kJdUHMNUefF0.ZbUg&pid=ImgGn');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Aplica o desfoque ao fundo */
+    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
     height: 100vh;
 }
 
+<<<<<<< HEAD
 .login-container {
     background-color: #507687;
     padding: 40px;
@@ -15,55 +44,75 @@ body {
     width: 300px;
     text-align: center;
     color: white;
+=======
+.login-box {
+    display: flex;
+    width: 70vw;
+    height: 70vh;
+    background-color: #507687; /* Cor de fundo com opacidade */
+    border-radius: 2vh;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative; /* Garante que esteja acima do fundo com blur */
+    z-index: 1; /* Coloca a caixa de login acima do fundo */
+>>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
 }
 
-.login-container h2 {
-    margin-bottom: 30px;
+
+.login-image {
+    width: 50%;
+    height: 100%;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-container {
+    width: 50%;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
 .social-login {
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 
 .social-login button {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 1.5vh;
+    margin-bottom: 1.5vh;
     border: none;
-    border-radius: 5px;
+    border-radius: 1vh;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2vh;
 }
 
 .google-btn {
+<<<<<<< HEAD
     background-color: #1877F2;
+=======
+    background-color: #2D2D2C;
+>>>>>>> 38ec2e71a9ebda5d81869ba0f817c0c009ecbb99
     color: white;
 }
 
 .facebook-btn {
-    background-color: #1877F2;
+    background-color: #2D2D2C;
     color: white;
 }
 
 .input-field {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 1.5vh;
+    margin-bottom: 2vh;
+    border-radius: 1vh;
     border: none;
-    font-size: 16px;
-}
-
-.login-footer {
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-.login-footer a {
-    color: #4285F4;
-    text-decoration: none;
-}
-
-.login-footer a:hover {
-    text-decoration: underline;
+    font-size: 2vh;
 }
