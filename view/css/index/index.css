@@ -1,6 +1,5 @@
-@import url(./header.css);
-@import url(./infos.css);
-@import url(./footer.css);
+@import url(./../index/infos.css);
+
 
 
 body {
