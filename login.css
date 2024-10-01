@@ -101,10 +101,65 @@ body::before {
 }
 
 .input-field {
-    width: 100%;
+    width: 95%;
     padding: 1.5vh;
     margin-bottom: 2vh;
     border-radius: 1vh;
     border: none;
     font-size: 2vh;
+}
+button {
+    width: 100%;
+    padding: 1.5vh;
+    margin-top: 2vh;
+    background-color:  #1663c9; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 2vh;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+/* Efeito de hover */
+button:hover {
+    background-color: #042b3d; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+}
+
+/* Efeito ao clicar */
+button:active {
+    background-color: #133e52; /* Cor ainda mais escura ao clicar */
+    transform: scale(0.98); /* Leve redução no tamanho ao clicar */
+}
+/* Botão de Entrar */
+input[type="button"] {
+    width: 100%;
+    padding: 1.5vh;
+    margin-top: 2vh;
+    background-color: #1663c9; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 2vh;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+/* Efeito de hover */
+input[type="button"]:hover {
+    background-color: #042b3d; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+}
+
+/* Efeito ao clicar */
+input[type="button"]:active {
+    background-color: #133e52; /* Cor ainda mais escura ao clicar */
+    transform: scale(0.98); /* Leve redução no tamanho ao clicar */
+}
+
+/* Ajuste para espaçamento */
+.login-footer {
+    margin-top: 20px; /* Adiciona 20px de espaço entre o botão e o texto */
+    font-size: 1.8vh;
 }
