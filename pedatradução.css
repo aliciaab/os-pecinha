@@ -10,6 +10,7 @@ footer {
     bottom: 0;
     background-color: #2D2D2C;
     padding: 15px;
+    flex-direction: column;
 }
 
 .content-footer {
@@ -20,8 +21,6 @@ footer {
 }
 
 #txt-footer {
-    font-size: 1vh;
-    margin-left: 40%;
-    color: #FCFAEE;
-    
+    font-size: 1.5vh;
+    color: #FCFAEE;    
 }
