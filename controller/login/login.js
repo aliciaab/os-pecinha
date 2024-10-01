@@ -1,1 +1,3 @@
-import { validarLogin } from="./validarLogin.js"
+import { validarLogin } from "./validarlogin.js";
+
+window.validarLogin = validarLogin;
