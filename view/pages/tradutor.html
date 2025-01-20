@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/projetos/tradutor.css">
-    <link rel="stylesheet" href="./../css/projetos/pedatradução.css">
-    <title>Librae Conecta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradutor de Libras</title>
+  <link rel="stylesheet" href="./../css/projetos/tradutor.css">
 </head>
-
 <body>
-    <header>
-        <h1 id="titulo-principal">Librae Conecta</h1>
-        <nav id="navegacao-principal">
-            <ul id="lista-links">
-                <li><a href="#tradutor">Tradutor</a></li>
-                <li><a href="#curso">Curso de Libras</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container" id="conteudo-principal">
-
-        <section class="secao-tradutor" id="tradutor">
-            <h2 id="titulo-tradutor">Tradutor de Libras para Português</h2>
-            <video id="elementoVideo" autoplay playsinline></video>
-            <button id="botaoIniciarTraducao" class="btn">Iniciar Tradução</button>
-            <div id="resultadoTraducao"></div>
-        </section>
-
-    </main>
-    <div>
-        <footer>
-            <div class="content-footer">
-                <h6 id="txt-footer">Todos os direitos autorais reservados</h6>
-            </div>
-        </footer>
+  <div class="container">
+    <h1>Tradutor de Libras para Português</h1>
+    <div class="translation-container">
+      <textarea id="input-text" placeholder="Digite seu texto aqui..."></textarea>
+      <button onclick="translateText()">Traduzir</button>
+      <div id="output-text"></div>
     </div>
+    <div class="avatar-container">
+      <h2>Tradução em Libras</h2>
+      <div id="avatar"> 
+    
+      </div>
+    </div>
+  </div>
+  <script src="./../../controller/tradutor/tradutor.js"></script>
 </body>
-
 </html>

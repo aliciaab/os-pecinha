@@ -1,57 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/index/index.css">
-    
-    <title>Librae Conecta</title>
+    <title>Tradutor Libras-Português</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <div id="logo_pgn">
-            <div id="img_logo">
-                <img src="https://tse2.mm.bing.net/th?id=OIG3.6aTnoKBgdM0U5x6c6RLM&w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn"
-                    alt="librae Conecta">
+    <div class="container">
+        <h1>Tradutor Libras-Português</h1>
+        
+        <div class="translator">
+            <textarea id="inputText" placeholder="Digite o texto em Português..."></textarea>
+            <button onclick="translateToLibras()">Traduzir para Libras</button>
+        </div>
+
+        <div class="display">
+            <div id="translationOutput">
+                <!-- O personagem 3D aparecerá aqui -->
             </div>
         </div>
-        <div id="btns_paginas">
-            <button class="btn" id="btn_home">
-                <span>HOME</span>
-            </button>
-            <button class="btn" id="btn_curso">
-                <span>CURSOS</span>
-            </button>
-            <button class="btn" id="btn_tradutor">
-                <span>TRADUTOR</span>
-            </button>
-        </div>
-    </header>
-    <section id="planeta">
-        <section id="ideia">
-            <p id="titulo1">LIBRAE CONECTA</p>
-            <h6>No Librae, nossa missão é promover a inclusão e a comunicação efetiva <br>
-                entre pessoas surdas e ouvintes através da Língua Brasileira de Sinais (Libras).<br>
-                Combinamos serviços de tradução de alta qualidade com oportunidades de aprendizado<br>
-                para que todos possam se comunicar de maneira mais eficiente e acessível.<br>
-            </h6>
-        </section>
-        <section id="botoes">
-            <button id="btn_tradutorg">
-                Tradutor
-            </button>
-            <button id="btn_cursog">
-                Curso
-            </button>
-        </section>
-    </section>
-    <footer>
-        <div class="content-footer">
-            <h6 id="txt-footer">Todos os direitos autorais reservados</h6>
-        </div>
-    </footer>
-</body>
+    </div>
 
+    <!-- Biblioteca Three.js para o 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.137.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
